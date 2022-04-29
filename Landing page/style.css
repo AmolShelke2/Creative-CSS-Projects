@@ -28,3 +28,25 @@
         background-position: center bottom;
     }
 }
+
+.beach {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(184, 165, 119);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform-origin: top;
+    animation: beachAnim 2s forwards;
+}
+
+@keyframes beachAnim {
+    0%, 50% {
+        transform: scaleY(1);
+    }
+    
+    100% {
+        transform: scaleY(0);
+    }
+}
