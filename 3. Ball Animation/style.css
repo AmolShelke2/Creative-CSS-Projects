@@ -62,7 +62,32 @@ body {
 .block-2 {
     top: 16rem;
     right: 8rem;
+    transform-origin: bottom left;
+    animation: block2Anim 5s infinite linear;
 }
+
+@keyframes block2Anim {
+    0% {
+        transform: translateY(-38rem) rotateZ(0);
+        opacity: .5;
+    }
+
+    30% {
+        transform: translateY(0) rotateZ(0);
+    }
+
+    40%, 45% {
+        transform: translateY(0) rotateZ(180deg);
+        opacity: 1;
+    }
+
+    55%, 100% {
+        transform: translateY(38rem) rotateZ(180deg);
+        opacity: .5;
+    }
+
+}
+
 
 .ball {
     width: 12rem;
