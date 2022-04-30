@@ -19,4 +19,57 @@ body {
     width: 70rem;
     aspect-ratio: 1;
     background-image: url('assets/bg.jpg');
+    position: relative;
+    overflow: hidden;
+}
+
+.block {
+    width: 18rem;
+    aspect-ratio: 1;
+    background-color: rgb(51, 184, 184);
+    position: absolute;
+}
+
+.block-1 {
+    top: 16rem;
+    right: 44rem;
+    transform-origin: bottom right;
+    animation: block1Anim 5s infinite linear;
+}
+
+@keyframes block1Anim {
+    0% {
+        transform: translateY(-38rem) rotateZ(0);
+        opacity: .5;
+    }
+
+    30% {
+        transform: translateY(0) rotateZ(0);
+    }
+
+    40%, 45% {
+        transform: translateY(0) rotateZ(-180deg);
+        opacity: 1;
+    }
+
+    55%, 100% {
+        transform: translateY(38rem) rotateZ(-180deg);
+        opacity: .5;
+    }
+
+}
+
+.block-2 {
+    top: 16rem;
+    right: 8rem;
+}
+
+.ball {
+    width: 12rem;
+    aspect-ratio: 1;
+    background-color: rgb(255, 118, 118);
+    border-radius: 50%;
+    position: absolute;
+    left: 29rem;
+    top: 22rem;
 }
