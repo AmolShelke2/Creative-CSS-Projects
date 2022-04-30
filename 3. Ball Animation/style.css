@@ -40,7 +40,6 @@ body {
 @keyframes block1Anim {
     0% {
         transform: translateY(-38rem) rotateZ(0);
-        opacity: 0.5;
     }
 
     30% {
@@ -63,7 +62,7 @@ body {
     top: 16rem;
     right: 8rem;
     transform-origin: bottom left;
-    animation: block2Anim 5s 2.5s infinite linear;
+    animation: block2Anim 5s -2.5s infinite linear;
 }
 
 @keyframes block2Anim {
