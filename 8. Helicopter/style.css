@@ -49,3 +49,22 @@ body {
   background-color: red;
   left: 17.5rem;
 }
+
+.cockpit {
+  width: 20rem;
+  height: 10rem;
+  top: 18.5rem;
+  left: 30rem;
+  background-color: #000;
+  border-radius: 50% 40% 40% 40%;
+}
+
+.cockpit::before {
+  content: "";
+  width: 8rem;
+  height: 5rem;
+  background-color: #ccc;
+  position: absolute;
+  top: 0.2rem;
+  border-radius: 100% 0 40% 0;
+}
