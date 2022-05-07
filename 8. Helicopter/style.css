@@ -28,4 +28,24 @@ body {
   width: 80rem;
   height: 60rem;
   background-color: #fff;
+  position: relative;
+}
+
+.helicopter div {
+  position: absolute;
+}
+
+.blade {
+  width: 40rem;
+  height: 2rem;
+  background-color: #000;
+  left: 20rem;
+  top: 15rem;
+}
+
+.main-rotor {
+  width: 5rem;
+  height: 2rem;
+  background-color: red;
+  left: 17.5rem;
 }
