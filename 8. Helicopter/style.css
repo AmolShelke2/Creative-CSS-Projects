@@ -87,3 +87,27 @@ body {
   top: 20.5rem;
   left: 26.5rem;
 }
+
+.landing-skid::before,
+.landing-skid::after {
+  content: "";
+  width: 11rem;
+  height: 5rem;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.landing-skid::before {
+  left: 8rem;
+}
+
+.landing-skid::after {
+  left: 18rem;
+}
+
+.tail-cone {
+  width: 25rem;
+  height: 2rem;
+  background-color: #000;
+}
